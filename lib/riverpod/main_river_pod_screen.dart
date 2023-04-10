@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test_project/riverpod/my_home_page_river_pod_screen.dart';
+import 'package:flutter_test_project/riverpod/user_data_screen.dart';
 
 
 final nameProvider = Provider<String>((ref)=> "dhananjay pathak"
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-     home: MyHomePageRiverPodScreen(),
+     home: UserDataScreen(),
     );
   }
 }
